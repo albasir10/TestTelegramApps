@@ -109,6 +109,7 @@
                 last_name: user.last_name,
                 username: user.username
               });
+			  console.log("Передаваемые данные в Unity:", userData);
               unityInstance.SendMessage("GameManager", "ReceiveUserData", userData); // Вызываем метод в Unity
             } else {
               console.error("User data is not available.");
